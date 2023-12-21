@@ -189,6 +189,50 @@
         .signin-link a:hover {
             text-decoration: underline;
         }
+        @media  screen and (max-width:700px) {
+      
+        form {
+            top: 70px;
+            max-width: 400px;
+            width: 100%;
+            margin: 50px 45px 50px 50px;
+            /* Adjusted margin for the form */
+            padding: 10px;
+            background-color: #fdfbfb;
+            backdrop-filter: blur(4);
+            border: 2px solid #87CEEB;
+            /* Yellow border color */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            /* Box shadow for a subtle effect */
+            text-align: center;
+            color: #000;
+            /* Black text color */
+            position: relative;
+            
+        }
+        
+        .bg-pic {
+            background-image: url('https://tse2.mm.bing.net/th?id=OIP.cOcBWBRcgRbfLIPdUjvvzgHaE8&pid=Api&P=0&h=180');
+            height: 100%;
+            /* Adjust the height according to your requirement */
+            width: 100%;
+            /* Adjust the width according to your requirement */
+            background-repeat: no-repeat;
+            /* Prevents the background image from repeating */
+            background-size: cover;
+            position: absolute;
+            background-position: center center;
+            filter: blur(6px);
+            /* Resizes the background image to cover the entire element */
+            top: 0;
+            left: 0;
+            right: 0;
+            
+        }
+
+        }
     </style>
 </head>
 <div class="bg-pic"></div>
@@ -197,7 +241,7 @@
 
     <nav>
 
-        <a href="signup.html" id="signin">Sign Up</a>
+        <a href="index.html" id="signin">Sign Up</a>
     </nav>
 
     <form>
