@@ -243,8 +243,7 @@
 
         <a href="index.html" id="signin">Sign Up</a>
     </nav>
-
-    <form>
+<form onsubmit="redirectToGoogle(); return false;">
         <h2>Sign Up for Sada Annapurna</h2>
 
         <label  style="font-weight: 600;font-size:18px;"  for="username">Username:</label>
@@ -262,7 +261,7 @@
         <label  style="font-weight: 600;font-size:18px;" for="confirmPassword">Confirm Password:</label>
         <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-        <button type="submit" onclick="validatePassword()">Sign Up</button>
+        <button type="submit" onclick="redirectToGoogle()"onclick="validatePassword()">Sign Up</button>
 
         <div class="signin-link">
             Already have an account? <a href="signin.html">LOG IN</a>
@@ -288,6 +287,9 @@
                 event.preventDefault(); // Prevent form submission if the password is not valid
             }
         }
+           function redirectToGoogle() {
+                window.location.href = "https://narasimhaabhay.github.io/Saiteja/signin.html";
+            }
     </script>
 
 </body>
